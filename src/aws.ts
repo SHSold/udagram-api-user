@@ -4,8 +4,7 @@ import {config} from './config/config';
 
 // Configure AWS
 const credentials = new AWS.SharedIniFileCredentials({
-	profile: config.aws_profile,
-	filename: config.aws_credentials_file
+	profile: config.aws_profile
 });
 
 AWS.config.credentials = credentials;
